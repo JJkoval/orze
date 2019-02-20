@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css\style.css">
+    <title>Kalkulator orzecznie</title>
+
+
+  </head>
+
+
+
+  <body>
+
+    <div class="form container">
+      <form>
+
+      <div class="form-label-group row">
+        <input class="dataPick col-5" type="date" id="dataUrodzenia" onchange="czyscUr()">
+        <input class="datatxt col-7" type="tel" id="dataUrodzenia-txt" placeholder="D.Ur RRRRMMDD" onchange="zmianaUr()">
+      </div>
+      <div class="form-label-group row">
+        <input class="dataPick col-5" type="date" id="dataBadania" onchange="czyscBa()">
+        <input class="datatxt col-7" type="tel" id="dataBadania-txt" placeholder="D.Ba RRRRMMDD" onchange="zmianaBa()">
+        <input type="button" class="btn btn-primary btn-lg btn-block" onclick="liczOrzeczenie()" value="Licz">
+      </div>
+
+      <div class="wynik" id="dataDo"></div>
+
+    </form>
+
+
+  </div>
+  </body>
+
+
+
+
+
+
+
+<script type="text/javascript" src='https://momentjs.com/downloads/moment-with-locales.min.js'></script>
+<script type="text/javascript" src='js\script.js'></script>
+
+</html>
