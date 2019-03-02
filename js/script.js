@@ -27,13 +27,13 @@ function liczOrzeczenie()
   const dataUr = moment(document.getElementById('dataUrodzenia').value);
   const dataBa = moment(document.getElementById('dataBadania').value);
   var dataOrz;
-  var data58i5 = dodaj(dataUr, 702);
+  var data57i5 = dodaj(dataUr, 690); //ma być 57.5 czyli 690 miesięcy
 
-  if (data58i5>=dataBa){
+  if (data57i5>=dataBa){
     dataOrz = dodaj(dataBa, 60);
     }
 
-  else if  ((data58i5<dataBa) && (dodaj(dataUr, 720)>=dataBa)){
+  else if  ((data57i5<dataBa) && (dodaj(dataUr, 720)>=dataBa)){
     dataOrz = dodaj(dataUr, 750);
     }
 
