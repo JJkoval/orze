@@ -1,5 +1,5 @@
 document.getElementById('dataBadania').valueAsDate = moment().toDate();
-document.getElementById('dataUrodzenia').valueAsDate = moment().subtract(702, 'months').toDate();
+document.getElementById('dataUrodzenia').valueAsDate = moment().subtract(690, 'months').toDate(); //poprawiona data urodzin na 57i5
 
 function zmianaUr(){
   document.getElementById('dataUrodzenia').valueAsDate = moment.utc(document.getElementById('dataUrodzenia-txt').value).toDate();
